@@ -23,7 +23,7 @@ class DetailController: UIViewController {
     }
     textLabel.text = selectionText
 
-    if splitViewController?.respondsToSelector("displayModeButtonItem") == true {
+    if #available(iOS 8.0, *) {
       navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
       navigationItem.leftItemsSupplementBackButton = true
     }

@@ -162,6 +162,8 @@
 		29CDE6311A1A72C2006975D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Ryan Nystrom";
 				TargetAttributes = {
@@ -419,6 +421,7 @@
 				29CDE65A1A1A72C2006975D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29CDE65B1A1A72C2006975D0 /* Build configuration list for PBXNativeTarget "UISVC-Compatibility-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +430,7 @@
 				29CDE65D1A1A72C2006975D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,12 +17,12 @@ class MasterController: UITableViewController {
     if segue.identifier == DetailSegueIdentifier {
       var dest: DetailController
       if let nav = segue.destinationViewController as? UINavigationController {
-        dest = nav.topViewController as DetailController
+        dest = nav.topViewController as! DetailController
       } else {
-        dest = segue.destinationViewController as DetailController
+        dest = segue.destinationViewController as! DetailController
       }
 
-      if let path = tableView.indexPathForSelectedRow() {
+      if let path = tableView.indexPathForSelectedRow {
         dest.selectedIndex = path.row
       }
     }
@@ -40,7 +40,7 @@ class MasterController: UITableViewController {
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier, forIndexPath: indexPath) as UITableViewCell
-    cell.textLabel.text = "Cell item \(indexPath.row)"
+    cell.textLabel?.text = "Cell item \(indexPath.row)"
     return cell
   }
 
